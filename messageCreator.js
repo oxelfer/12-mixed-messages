@@ -29,6 +29,9 @@ const complementMessage = [
   "to rule the universe.",
 ];
 
+// message storage array
+const savedMessages = [];
+
 // generate random int with an array length passed as an argument
 const genRandomInt = (arrayLength) => {
   return Math.floor(Math.random() * arrayLength);
@@ -41,3 +44,25 @@ const getRandomArrayItem = (array) => {
   return array[itemIndex];
 };
 // console.log(getRandomArrayItem(complementMessage));
+
+// generates a new message
+const genMessage = () => {
+  const firstElement = getRandomArrayItem(subjectMessage);
+  const secondElement = getRandomArrayItem(predicateMessage);
+  const thirdElement = getRandomArrayItem(complementMessage);
+  return firstElement + " " + secondElement + " " + thirdElement;
+};
+// console.log(genMessage());
+
+// stores generated messages into an array
+const storeMessages = () => {
+  savedMessages.push(genMessage());
+};
+/* storeMessages();
+storeMessages();
+storeMessages();
+storeMessages();
+storeMessages();
+storeMessages();
+storeMessages();
+console.log(savedMessages); */
