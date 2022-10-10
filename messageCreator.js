@@ -28,3 +28,10 @@ const complementMessage = [
   "to itch all over.",
   "to rule the universe.",
 ];
+
+// generate random int with an array length passed as an argument
+const genRandomInt = (arrayLength) => {
+  return Math.floor(Math.random() * arrayLength);
+};
+
+// console.log(genRandomInt(7));
