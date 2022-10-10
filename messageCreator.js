@@ -33,5 +33,11 @@ const complementMessage = [
 const genRandomInt = (arrayLength) => {
   return Math.floor(Math.random() * arrayLength);
 };
-
 // console.log(genRandomInt(7));
+
+// gets a random item from an array
+const getRandomArrayItem = (array) => {
+  const itemIndex = genRandomInt(array.length);
+  return array[itemIndex];
+};
+// console.log(getRandomArrayItem(complementMessage));
