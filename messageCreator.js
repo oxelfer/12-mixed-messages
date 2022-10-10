@@ -1,5 +1,4 @@
 // Codecademy Project - message generator
-// this will be the solution file
 
 const subjectMessage = [
   "The administrator",
@@ -32,7 +31,7 @@ const complementMessage = [
 // message storage array
 const savedMessages = [];
 
-// generate random int with an array length passed as an argument
+// generate random int (with an array length passed as an argument)
 const genRandomInt = (arrayLength) => {
   return Math.floor(Math.random() * arrayLength);
 };
